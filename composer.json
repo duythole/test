@@ -1,0 +1,41 @@
+{
+    "name": "duythole/duythole",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "THOLD",
+            "email": "thold@topcv.vn",
+            "homepage": "https://www.topcv.vn"
+        }
+    ],
+    "homepage": "https://github.com/duythole/duythole",
+    "keywords": ["Laravel", "DTL"],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Testcenter\\Testcenter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Testcenter\\Testcenter\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Testcenter\\Testcenter\\TestcenterServiceProvider"
+            ],
+            "aliases": {
+                "Testcenter": "Testcenter\\Testcenter\\Facades\\Testcenter"
+            }
+        }
+    }
+}
